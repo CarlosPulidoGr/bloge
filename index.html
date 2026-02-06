@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carlos Pulido Fernández | Analista de Datos & Desarrollador</title>
+    <meta name="description" content="Portafolio de Carlos Pulido Fernández. Especialista en Análisis de Datos, Python, R, Java y Logopedia.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        accent: '#38bdf8', // Azul cielo brillante
+                        darkbg: '#0f172a', // Azul noche
+                        cardbg: '#1e293b', // Gris azulado
+                        secondary: '#94a3b8' // Texto gris
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        section { scroll-margin-top: 100px; }
+        .fade-in { animation: fadeIn 1s ease-in; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+</head>
+
+<body class="bg-darkbg text-slate-100 font-sans antialiased selection:bg-accent selection:text-darkbg">
+
+    <header class="fixed top-0 w-full z-50 bg-darkbg/90 backdrop-blur-md border-b border-slate-800">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#inicio" class="text-xl font-bold tracking-tight group">
+                Carlos<span class="text-accent group-hover:underline decoration-2 underline-offset-4">Pulido</span>
+            </a>
+            
+            <ul class="hidden md:flex space-x-8 text-sm font-medium text-secondary">
+                <li><a href="#sobre-mi" class="hover:text-accent transition-colors">Perfil</a></li>
+                <li><a href="#formacion" class="hover:text-accent transition-colors">Formación</a></li>
+                <li><a href="#experiencia" class="hover:text-accent transition-colors">Experiencia</a></li>
+                <li><a href="#contacto" class="hover:text-accent transition-colors">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="min-h-screen flex items-center justify-center pt-20 relative overflow-hidden">
+            <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-accent/10 rounded-full blur-3xl -z-10"></div>
+
+            <div class="container mx-auto px-6 text-center">
+                <div class="fade-in max-w-4xl mx-auto">
+                    <span class="inline-block py-1 px-3 rounded-full bg-slate-800 border border-slate-700 text-accent text-xs font-bold tracking-widest mb-6 uppercase">
+                        Data Analysis & Software Development
+                    </span>
+                    <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-8 leading-tight">
+                        Carlos Pulido Fernández
+                    </h1>
+                    <p class="text-xl md:text-2xl text-secondary mb-10 leading-relaxed max-w-2xl mx-auto">
+                        Analista de Datos y Programador. Fusionando la <span class="text-slate-100 font-semibold">Salud y Estadística</span> con el <span class="text-slate-100 font-semibold">Desarrollo de Software</span> (Python, R, Java).
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row justify-center gap-4">
+                        <a href="#contacto" class="px-8 py-4 bg-accent hover:bg-sky-400 text-darkbg font-bold rounded-xl transition-all transform hover:-translate-y-1 shadow-[0_0_20px_rgba(56,189,248,0.3)]">
+                            Contactar ahora
+                        </a>
+                        <a href="#experiencia" class="px-8 py-4 bg-slate-800 hover:bg-slate-700 text-white font-bold rounded-xl transition-all border border-slate-700">
+                            Ver trayectoria
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre-mi" class="py-24 bg-slate-900/50">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-2 gap-16 items-center">
+                    <div>
+                        <h2 class="text-3xl font-bold mb-6 flex items-center gap-3">
+                            <span class="text-accent text-4xl">/</span> Sobre mí
+                        </h2>
+                        <div class="space-y-4 text-secondary text-lg leading-relaxed">
+                            <p>
+                                Mi interés por el análisis de datos y la programación me llevó a expandir mis horizontes. Provengo del ámbito de la salud como <strong>Logopeda</strong>, lo que me ha dado una base científica y humana sólida.
+                            </p>
+                            <p>
+                                Actualmente curso un <strong class="text-slate-100">Máster en Estadística Aplicada</strong> y un <strong class="text-slate-100">Grado Superior en Desarrollo de Aplicaciones (DAM)</strong>.
+                            </p>
+                            <p>
+                                Domino <strong>Python, R y Java</strong>, y tengo experiencia real gestionando datos clínicos y educativos. Busco aplicar esta visión híbrida para resolver problemas complejos.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-cardbg p-6 rounded-2xl border border-slate-700/50 hover:border-accent/50 transition-colors">
+                            <h3 class="text-accent font-bold mb-2">Dev & Tech</h3>
+                            <ul class="text-secondary text-sm space-y-1">
+                                <li>• Python & Java</li>
+                                <li>• SQL & Bases de datos</li>
+                                <li>• Git / Entornos Ágiles</li>
+                            </ul>
+                        </div>
+                        <div class="bg-cardbg p-6 rounded-2xl border border-slate-700/50 hover:border-accent/50 transition-colors">
+                            <h3 class="text-accent font-bold mb-2">Data Science</h3>
+                            <ul class="text-secondary text-sm space-y-1">
+                                <li>• R & SPSS</li>
+                                <li>• Excel Avanzado</li>
+                                <li>• Estadística Aplicada</li>
+                            </ul>
+                        </div>
+                        <div class="bg-cardbg p-6 rounded-2xl border border-slate-700/50 hover:border-accent/50 transition-colors">
+                            <h3 class="text-accent font-bold mb-2">Idiomas</h3>
+                            <ul class="text-secondary text-sm space-y-1">
+                                <li>• Español (Nativo)</li>
+                                <li>• Inglés (B2 - Prep C2)</li>
+                                <li>• Francés (Prep B1)</li>
+                            </ul>
+                        </div>
+                        <div class="bg-cardbg p-6 rounded-2xl border border-slate-700/50 hover:border-accent/50 transition-colors">
+                            <h3 class="text-accent font-bold mb-2">Soft Skills</h3>
+                            <ul class="text-secondary text-sm space-y-1">
+                                <li>• Comunicación Clínica</li>
+                                <li>• Trabajo Multidisciplinar</li>
+                                <li>• Adaptabilidad</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="formacion" class="py-24 bg-darkbg">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <h2 class="text-3xl font-bold mb-12 text-center"><span class="text-accent">/</span> Formación Académica</h2>
+                
+                <div class="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-700 before:to-transparent">
+                    
+                    <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                        <div class="flex items-center justify-center w-10 h-10 rounded-full border border-accent bg-darkbg shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 text-accent font-bold">1</div>
+                        <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 rounded-xl bg-cardbg border border-slate-700 shadow-sm">
+                            <div class="flex items-center justify-between space-x-2 mb-1">
+                                <h3 class="font-bold text-slate-200">Máster en Estadística Aplicada</h3>
+                                <time class="font-mono text-xs text-accent">Presente</time>
+                            </div>
+                            <div class="text-slate-400 text-sm">Universidad de Granada</div>
+                        </div>
+                    </div>
+
+                    <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                        <div class="flex items-center justify-center w-10 h-10 rounded-full border border-slate-600 bg-darkbg shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 text-slate-400 font-bold">2</div>
+                        <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 rounded-xl bg-cardbg border border-slate-700 shadow-sm">
+                            <div class="flex items-center justify-between space-x-2 mb-1">
+                                <h3 class="font-bold text-slate-200">Grado Sup. Desarrollo Aplicaciones Multiplataforma (DAM)</h3>
+                                <time class="font-mono text-xs text-accent">Presente</time>
+                            </div>
+                            <div class="text-slate-400 text-sm">Instituto FOC, Granada</div>
+                        </div>
+                    </div>
+
+                    <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                        <div class="flex items-center justify-center w-10 h-10 rounded-full border border-slate-600 bg-darkbg shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 text-slate-400 font-bold">3</div>
+                        <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 rounded-xl bg-cardbg border border-slate-700 shadow-sm">
+                            <div class="flex items-center justify-between space-x-2 mb-1">
+                                <h3 class="font-bold text-slate-200">Máster Universitario en Investigación Logopédica en Trastornos Degenerativos y Daño Cerebral</h3>
+                                <time class="font-mono text-xs text-slate-500">2025</time>
+                            </div>
+                            <div class="text-slate-400 text-sm">Universidad de Granada</div>
+                        </div>
+                    </div>
+
+                    <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                        <div class="flex items-center justify-center w-10 h-10 rounded-full border border-slate-600 bg-darkbg shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 text-slate-400 font-bold">4</div>
+                        <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 rounded-xl bg-cardbg border border-slate-700 shadow-sm">
+                            <div class="flex items-center justify-between space-x-2 mb-1">
+                                <h3 class="font-bold text-slate-200">Graduado en Logopedia</h3>
+                                <time class="font-mono text-xs text-slate-500">2024</time>
+                            </div>
+                            <div class="text-slate-400 text-sm">Universidad de Granada</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="experiencia" class="py-24 bg-slate-900/50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold mb-12"><span class="text-accent">/</span> Experiencia Profesional</h2>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <article class="p-8 rounded-2xl bg-cardbg border border-slate-700 hover:border-accent transition-all group">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-slate-100 group-hover:text-accent transition-colors">Logopeda & Gestión de Datos</h3>
+                                <p class="text-secondary text-sm">Neuroafeic</p>
+                            </div>
+                            <span class="text-xs font-mono py-1 px-2 rounded bg-slate-800 text-slate-400">Ene 25 - Mar 25</span>
+                        </div>
+                        <ul class="space-y-2 text-secondary text-sm list-disc list-inside">
+                            <li>Gestión digital y uso de <strong>SQL</strong> para bases de datos clínicas.</li>
+                            <li>Rehabilitación de lenguaje y método Castillo Morales.</li>
+                            <li>Terapias online y manejo de recursos digitales.</li>
+                        </ul>
+                    </article>
+
+                    <article class="p-8 rounded-2xl bg-cardbg border border-slate-700 hover:border-accent transition-all group">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-slate-100 group-hover:text-accent transition-colors">Logopeda Educativo</h3>
+                                <p class="text-secondary text-sm">CEIP Sierra Nevada</p>
+                            </div>
+                            <span class="text-xs font-mono py-1 px-2 rounded bg-slate-800 text-slate-400">Ene 24 - Jun 24</span>
+                        </div>
+                        <ul class="space-y-2 text-secondary text-sm list-disc list-inside">
+                            <li>Intervención en Aula TEA (lenguaje, lecto-escritura, matemáticas).</li>
+                            <li>Mejora de la psicomotricidad e independencia.</li>
+                            <li>Trabajo multidisciplinar con el equipo docente.</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="py-24 bg-darkbg text-center">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold mb-6">¿Hablamos?</h2>
+                <p class="text-secondary text-lg mb-10 max-w-xl mx-auto">
+                    Busco oportunidades donde aplicar mi experiencia técnica y analítica en un entorno profesional dinámico.
+                </p>
+                
+                <div class="flex flex-col md:flex-row justify-center gap-6">
+                    <a href="mailto:carlospf2911@gmail.com" class="flex items-center justify-center gap-3 px-8 py-4 bg-accent hover:bg-sky-400 text-darkbg font-bold rounded-xl transition-transform hover:scale-105">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        carlospf2911@gmail.com
+                    </a>
+                    
+                    <a href="https://www.linkedin.com/in/carlos-pulido-fernandez" target="_blank" class="flex items-center justify-center gap-3 px-8 py-4 bg-cardbg hover:bg-slate-700 text-white font-bold rounded-xl border border-slate-700 transition-transform hover:scale-105">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        LinkedIn
+                    </a>
+                </div>
+                <p class="mt-12 text-slate-500 text-sm">
+                    Tlf: 692 410 804 | Granada, España
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-6 bg-darkbg border-t border-slate-800 text-center text-slate-600 text-sm">
+        <p>&copy; 2025 Carlos Pulido Fernández. CV Interactivo.</p>
+    </footer>
+
+</body>
+</html>
